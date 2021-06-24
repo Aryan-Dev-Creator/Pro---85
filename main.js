@@ -85,6 +85,17 @@ function my_keydown(e)
         car2_right();
         console.log("key d");
     }
+
+    if(car1_x > 700)
+    {
+        console.log("car1");
+        document.getElementById('game_status').innerHTML = "Car1 Won!!!!!!!!!!!";
+    }
+    else if(car2_x > 700)
+    {
+        console.log("car2");
+        document.getElementById('game_status').innerHTML = "Car2 Won!!!!!!!!!!!";
+    }
 }
 
 function car1_up()
